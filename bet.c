@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include"shell.h"
 /*
  *main- entry point of the code
  *return (0):Always return success.
