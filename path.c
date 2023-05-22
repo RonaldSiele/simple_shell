@@ -5,7 +5,7 @@
 
 #define MAXIMUM 100
 
-int main(int argc, char *argv[])
+int MAXII(int argc, char *argv[])
 {
 char cmd[MAXIMUM];
 char e_path[MAXIMUM];

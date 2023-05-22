@@ -4,7 +4,7 @@
 #include<unistd.h>
 #define NAMBARI 130
 
-int main(void)
+int line(void)
 {
 char cmd_line[NAMBARI];
 char cmd_path[NAMBARI];

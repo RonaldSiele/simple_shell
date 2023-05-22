@@ -5,7 +5,7 @@
 
 #define COMMENT_MAX 110
 
-int main(void)
+int comment(void)
 {
 char input[COMMENT_MAX];
 while (1)

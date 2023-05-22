@@ -5,7 +5,7 @@
 
 #define SEPAR_MAX 120
 
-int main(int argc, char *argv[])
+int separ(int argc, char *argv[])
 {
 char cmd[SEPAR_MAX];
 char* token;

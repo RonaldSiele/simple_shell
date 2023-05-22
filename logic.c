@@ -5,7 +5,7 @@
 
 #define LOGIC_MAX 100
 
-int main(void)
+int logic(void)
 {
 char command[LOGIC_MAX], *token, *delimiter = "&&||";
 int cmd;

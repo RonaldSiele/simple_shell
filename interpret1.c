@@ -4,7 +4,7 @@
 #include<unistd.h>
 
 #define CMD_NUMBER 100
-int main(int argc, char *argv[1])
+int NUMBER(int argc, char *argv[1])
 {
 char cmd[CMD_NUMBER];
 char whole_path[CMD_NUMBER];

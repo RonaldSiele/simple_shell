@@ -32,7 +32,7 @@ token = strtok(NULL, " ");
 return replacedStr;
 }
 
-int main()
+int HANDLE()
 {
 char cmd[HANDLE_MAX];
 char *replacedCmd;
