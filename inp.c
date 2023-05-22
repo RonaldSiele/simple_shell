@@ -5,7 +5,7 @@
 
 #define INPUT_MAX 100
 
-int main(int argc, char *argv[])
+int INPUT(int argc, char *argv[])
 {
 FILE *file;
 char command[INPUT_MAX];

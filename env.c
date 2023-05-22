@@ -18,7 +18,7 @@ i++;
 
 
 
-int main(int argc, char *argv[])
+int environment(int argc, char *argv[])
 {
 char command[GREAT_NUM];
 char command_path[GREAT_NUM];

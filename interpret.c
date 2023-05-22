@@ -11,7 +11,7 @@
  * @cmd_status:Exit status of the program
  * Return (0): always return succes
  */
-int main(void)
+int max(void)
 {
 char cmd[CMD_MAX];
 char full_path[CMD_MAX];

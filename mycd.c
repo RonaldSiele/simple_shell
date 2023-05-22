@@ -5,7 +5,7 @@
 
 #define MYCD_MAX 100
 
-int main(int argc, char *argv[])
+int MYCD(int argc, char *argv[])
 {
 char newDir[MYCD_MAX];
 if (argc == 1 || (argc ==2 && strcmp(argv[2],"-") == 0))

@@ -5,7 +5,7 @@
 
 #define SENT_MAX 150
 
-int main(int argc, char *argv[])
+int SENT1(int argc, char *argv[])
 {
 if (argc < 2)
 {

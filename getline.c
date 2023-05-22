@@ -32,7 +32,7 @@ line[read - 1] = '\0';
 strncpy(buffer, line, GETLINE_MAX);
 return buffer;
 }
-int main()
+int GETLINE()
 {
 char *line;
 while(1)

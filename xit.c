@@ -5,7 +5,7 @@
 
 #define EXIT_SHELL_MAX 150
 
-int main(int argc, char *argv[])
+int EXIT1(int argc, char *argv[])
 {
 int exit_status;
 if (argc < 2)

@@ -3,7 +3,7 @@
 #include<string.h>
 #include<unistd.h>
 #define COMM_DOUBLE 100
-int main(int argc, char *argv[])
+int main2(int argc, char *argv[])
 {
 char cmd[COMM_DOUBLE];
 char cmd_pathh[COMM_DOUBLE];
