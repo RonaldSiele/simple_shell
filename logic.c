@@ -59,7 +59,6 @@ if (status == -1)
 commandStatus = -1;
 break;
 }
-commandStatus = WEXITSTATUS(status);
 }
 }
 token = strtok(NULL, delimiter);
@@ -67,3 +66,4 @@ token = strtok(NULL, delimiter);
 }
 return (0);
 }
+
