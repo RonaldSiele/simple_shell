@@ -4,7 +4,11 @@
 #include<unistd.h>
 
 #define LOGIC_MAX 100
-
+/**
+ * logic - Executes logical commands entered by the user.
+ *
+ * Return: Always returns 0.
+ */
 int logic(void)
 {
 char command[LOGIC_MAX], *token, *delimiter = "&&||";

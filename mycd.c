@@ -4,7 +4,13 @@
 #include<unistd.h>
 
 #define MYCD_MAX 100
-
+/**
+ * MYCD - changes the current working directory.
+ * @argc: The number of comand_line arguments.
+ * @argv: An array of strings representing the arguments.
+ *
+ * Return:Always return 0.
+ */
 int MYCD(int argc, char *argv[])
 {
 char newDir[MYCD_MAX];
