@@ -28,6 +28,7 @@ exit(0);
 }
 strcpy(cmd_path, "");
 strcat(cmd_path, cmd_line);
+strcat(cmd_path, cmd_line);
 
 cmd_status = system(cmd_path);
 
