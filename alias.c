@@ -23,7 +23,6 @@ for (i = 0; i < aliasCount; i++)
 printf("%s='%s'\n", aliases[i].name, aliases[i].value);
 }
 }
-i
 /**
 * main -  Entry point of the program
 * @argc: -  The number of command-line arguments
