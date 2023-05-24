@@ -4,7 +4,13 @@
 #include<unistd.h>
 
 #define SEPAR_MAX 120
-
+/**
+ * separ - Executes  multiple commands separated by semicolons.
+ * @argc: The number of commandline arguments.
+ * @argv: An array of strings representing the arguments.
+ *
+ * Return: Always return 0.
+ */
 int separ(int argc, char *argv[])
 {
 char cmd[SEPAR_MAX];
