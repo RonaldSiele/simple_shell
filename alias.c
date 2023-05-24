@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 #include<unistd.h>
+#include "alias.h"
 
 #define ALIAS_MAX 100
 typedef struct
