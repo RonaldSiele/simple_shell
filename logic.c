@@ -11,6 +11,7 @@
  * Return: 0 on success, -1 on failure.
  */
 int executeCommand(char *command)
+{
 int status = system(command);
 if (status == -1)
 {
