@@ -27,7 +27,6 @@ else
 printf("cd : No $HOME environment variable found.\n");
 }
 }
-}
 else if (argc == 2)
 {
 if (strcmp(argv[1], "-" == 0)
@@ -53,6 +52,7 @@ setenv("PWD", newDir, 1);
 else
 {
 printf("cd: %s: no such directory. \n", argv[1]);
+}
 }
 }
 else
