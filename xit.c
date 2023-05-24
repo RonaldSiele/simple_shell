@@ -10,7 +10,7 @@ int EXIT1(int argc, char *argv[])
 int exit_status;
 if (argc < 2)
 {
-printf("usage:%s status \n",argv[2]);
+printf("usage:%s status \n", argv[2]);
 exit(1);
 }
 exit_status = atoi(argv[1]);
