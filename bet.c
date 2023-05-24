@@ -7,5 +7,6 @@
  */
 int main1(void)
 {
-	return (0);
+printf("simple shell project\n");
+return (0);
 }
