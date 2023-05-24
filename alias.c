@@ -11,9 +11,11 @@
 #define MAX_ALIASES 100
 
 /**
-* printAliases - Prints the aliases stored in an array.
-* @aliases: - The array of aliases
-* @aliasCount: - The number of aliases in the array
+* printAliases - Prints the list of aliases.
+* @aliases: - The array of alias Structures represnting the aliases.
+* @aliasCount: - The number of aliases in the array.
+*
+* Return: This function does not return a value.
 */
 void printAliases(Alias *aliases, int aliasCount)
 {
@@ -24,11 +26,11 @@ printf("%s='%s'\n", aliases[i].name, aliases[i].value);
 }
 }
 /**
-* main -  Entry point of the program
-* @argc: -  The number of command-line arguments
-* @argv: -  An array of strings representing the arguments
+* main -  The main function of the program.
+* @argc: -  The number of command-line arguments.
+* @argv: -  An array of strings representing the arguments.
 *
-* @Return: 0 if successfull
+* @Return: 0 if successfull.
 */
 int main(int argc, char *argv[])
 {
