@@ -1,7 +1,8 @@
 #include<stdio.h>
 /*
- *main- entry point of the code
- *return (0):Always return success.
+ *main1- entry point of the code
+ *@void - return nothing
+ *Return:Always return success 0.
  */
 int main1(void)
 {
