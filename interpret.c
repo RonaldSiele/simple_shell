@@ -5,11 +5,12 @@
 
 #define CMD_MAX 150
 /*
- * max ()-The main function of the interpret program.
+ * max - The main function of the interpret program.
+ * The function takes no input parameters
  * @CMD_MAX: command line charactors
  * @void:no input parameter
  * @cmd_status:Exit status of the program
- * Return (0): always return succes
+ * Return:0 always return succes
  */
 int max(void)
 {
