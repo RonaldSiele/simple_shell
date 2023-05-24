@@ -12,8 +12,8 @@
 char *getline_builtin()
 {
 static char buffer[GETLINE_MAX];
-static char *line = NULL;
-static  size_t line_size = 0;
+static char *line;
+static  size_t line_size;
 ssize_t read;
 
 printf("Enter the line:");
