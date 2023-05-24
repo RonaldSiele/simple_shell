@@ -1,6 +1,6 @@
 #include<stdio.h>
 /*
- *main1- entry point of the code
+ *main1- entry point of the program
  *@void - return nothing
  *Return:Always return success 0.
  */
