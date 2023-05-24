@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<string.h>
 #include<unistd.h>
+#include<sys/types.h>
+#include<sys/wait.h>
 
 #define MAXIMUM 100
 /**
@@ -37,8 +39,23 @@ strcat(e_path, argv[0]);
 strcat(e_path, cmd);
 if (access(e_path, X_OK) == 0)
 {
+pid_t pid = fork();
+if (pid == -1)
+{
+perror("fork");
+exit(1);
+}
+else if (pid ==0)
+{
 command_status = system(e_path);
-(void)command_status;
+exit(command_status);
+}
+else
+{
+int child_status;
+waitpid(pid, &child_status, 0);
+printf("command excited with status:%d\n",WEXITSTATUS(command_status));
+}
 }
 else
 {
@@ -47,4 +64,9 @@ continue;
 }
 }
 return (0);
+}
+int man(int argc, char *argv[])
+{
+MAXII(argc,argv);
+return 0;
 }
