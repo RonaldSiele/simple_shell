@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main1 - Entry point
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int main1(void)
 {
 printf("simple shell project\n");
 return (0);
