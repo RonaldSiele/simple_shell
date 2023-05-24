@@ -35,3 +35,7 @@ printf("command is not found\n");
 }
 return (0);
 }
+int max2(void)
+{
+return max();
+}
