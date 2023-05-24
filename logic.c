@@ -15,10 +15,11 @@ int executeCommand(char *command)
 int status = system(command);
 if (status == -1)
 {
-printf("Error executing command:%s\n",command);
+printf("Error executing command:%s\n", command);
 return (-1);
 }
 return (0);
+}
 /**
  * logic - Executes logical commands entered by the user.
  *
@@ -30,22 +31,21 @@ char command[LOGIC_MAX];
 char *token;
 const char *delimiter = "&&||";
 int shouldExecute = 1;
+int commandStatus = 0;
 
-int cmd;
 
-while (printf("Enter command:") && fgets(command, LOGIC_MAX, stdin) &&  fgets(command, LOGIC_MAX, stdin) && strcmp(command, "exit\n"))
+while (printf("Enter command:") && fgets(command, LOGIC_MAX, stdin) && strcmp(command, "exit\n"))
 {
-int commandStatus;
 shouldExecute = 1;
 token = strtok(command, delimiter);
 while (token != NULL)
 {
 int status;
-if (strcmp(token, "&&") ==0)
-(
-shouldExecute = (commandStatus ==0);
+if (strcmp(token, "&&") == 0)
+{
+shouldExecute = (commandStatus == 0);
 }
-else if (strcmp(token, "||") ==0)
+else if (strcmp(token, "||") == 0)
 {
 shouldExecute = (commandStatus != 0);
 }
@@ -62,7 +62,7 @@ break;
 commandStatus = WEXITSTATUS(status);
 }
 }
-token = strtok(NULL,delimiter);
+token = strtok(NULL, delimiter);
 }
 }
 return (0);
