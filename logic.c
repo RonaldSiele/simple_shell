@@ -43,7 +43,7 @@ while (token != NULL)
 int status;
 if (strcmp(token, "&&") ==0)
 (
-shouldExecute = (commandStatus ==0)
+shouldExecute = (commandStatus ==0);
 }
 else if (strcmp(token, "||") ==0)
 {
