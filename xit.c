@@ -4,7 +4,13 @@
 #include<unistd.h>
 
 #define EXIT_SHELL_MAX 150
-
+/**
+ * EXIT1 - Exits the shell with a specified exit status.
+ * @argc: The number of commandline arguments.
+ * @argv: An array of strings representing the arguments.
+ *
+ * Return: This function does not return a value.
+ */
 int EXIT1(int argc, char *argv[])
 {
 int exit_status;
