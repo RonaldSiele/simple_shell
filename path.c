@@ -45,7 +45,7 @@ if (pid == -1)
 perror("fork");
 exit(1);
 }
-else if (pid ==0)
+else if (pid == 0)
 {
 command_status = system(e_path);
 exit(command_status);
@@ -54,7 +54,7 @@ else
 {
 int child_status;
 waitpid(pid, &child_status, 0);
-printf("command excited with status:%d\n",WEXITSTATUS(command_status));
+printf("command excited with status:%d\n", WEXITSTATUS(command_status));
 }
 }
 else
@@ -67,6 +67,6 @@ return (0);
 }
 int man(int argc, char *argv[])
 {
-MAXII(argc,argv);
-return 0;
+MAXII(argc, argv);
+return (0);
 }
