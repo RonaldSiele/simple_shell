@@ -27,7 +27,23 @@ else
 printf("cd : No $HOME environment variable found.\n");
 }
 }
+}
 else if (argc == 2)
+{
+if (strcmp(argv[1], "-" == 0)
+{
+const char* prevDir = getenv("OLDPWD");
+if (prevDir != NULL)
+{
+chdir(prevDir);
+sentev("PWD", prevDir, 1);
+}
+else
+{
+printf("cd: No previous directory found.\n");
+}
+}
+else
 {
 if (chdir(argv[1]) == 0)
 {
