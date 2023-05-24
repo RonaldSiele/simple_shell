@@ -3,7 +3,11 @@
 #include<string.h>
 #include<unistd.h>
 #define NAMBARI 130
-
+/**
+ * line - Reads and executes command lines.
+ *
+ * Return: 0 on success.
+ */
 int line(void)
 {
 char cmd_line[NAMBARI];
@@ -23,7 +27,7 @@ if (strcmp(cmd_line, "exit") == 0)
 exit(0);
 }
 strcpy(cmd_path, "");
-strcat(cmd_path,cmd_line);
+strcat(cmd_path, cmd_line);
 
 cmd_status = system(cmd_path);
 
