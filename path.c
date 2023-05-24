@@ -4,7 +4,13 @@
 #include<unistd.h>
 
 #define MAXIMUM 100
-
+/**
+ * MAXII - Executes a command based on the provided argument.
+ * @argc: The number of command_line arguments.
+ * @argv: An array of strings representing the arguments.
+ *
+ *Return: Always returns 0.
+ */
 int MAXII(int argc, char *argv[])
 {
 char cmd[MAXIMUM];
