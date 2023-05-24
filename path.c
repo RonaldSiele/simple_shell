@@ -65,6 +65,12 @@ continue;
 }
 return (0);
 }
+/**
+ * man - Entry pont of the program.
+ * @argc: arguments.
+ * @argv: arrays
+ * Return: Always returns 0.
+ */
 int man(int argc, char *argv[])
 {
 MAXII(argc, argv);
