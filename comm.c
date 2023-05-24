@@ -4,7 +4,11 @@
 #include<unistd.h>
 
 #define COMMENT_MAX 110
-
+/**
+ * comment - ignores lines starting with '#' character
+ *
+ * Return: 0 on success.
+ */
 int comment(void)
 {
 char input[COMMENT_MAX];

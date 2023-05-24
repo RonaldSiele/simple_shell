@@ -4,7 +4,7 @@
 #include<unistd.h>
 
 #define GREAT_NUM 100
-void print_environment()	
+void print_environment(void)
 {
 extern char **environ;
 int i = 0;

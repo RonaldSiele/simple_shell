@@ -4,6 +4,13 @@
 #include<unistd.h>
 
 #define CMD_NUMBER 100
+/**
+ * NUMBER - executes a command  provided as an argument
+ * @argc: The number of command line arguments.
+ * @argv:An array of command line arguments.
+ *
+ * Return: always returns 0 to indicates success.
+ */
 int NUMBER(int argc, char *argv[1])
 {
 char cmd[CMD_NUMBER];

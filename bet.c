@@ -1,10 +1,12 @@
-#include<stdio.h>
-/*
- *main- entry point of the code
- *return (0):Always return success.
+#include <stdio.h>
+
+/**
+ * main1 - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main1(void)
 {
-printf("this project is all about shell");
+printf("simple shell project\n");
 return (0);
 }
