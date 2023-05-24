@@ -4,7 +4,13 @@
 #include<unistd.h>
 
 #define SENT_MAX 150
-
+/**
+ * SENT1 - Sets or unsets enviromnent variables  based on the provided command_line.
+ * @argc: the number of command-line arguments.
+ * @argv: An array of strings represnting the arguments.
+ *
+ * Return: Always returns 0.
+ */
 int SENT1(int argc, char *argv[])
 {
 if (argc < 2)
