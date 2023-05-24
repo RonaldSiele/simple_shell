@@ -21,21 +21,21 @@ line = NULL;
 line_size = 0;
 }
 read = getline(&line, &line_size, stdin);
-if(read < 0)
+if (read < 0)
 {
-return NULL;
+return (NULL);
 }
 if (read > 0 && line[read - 1] == '\n')
 {
 line[read - 1] = '\0';
 }
 strncpy(buffer, line, GETLINE_MAX);
-return buffer;
+return (buffer);
 }
-int GETLINE()
+int GETLINE(void)
 {
 char *line;
-while(1)
+while (1)
 {
 line = getline_builtin();
 if (line == NULL)
@@ -43,7 +43,7 @@ if (line == NULL)
 printf("Goodbye!\n");
 break;
 }
-printf("You entered:%s\n",line);
+printf("You entered:%s\n", line);
 }
 return (0);
 }
