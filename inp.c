@@ -4,7 +4,13 @@
 #include<string.h>
 
 #define INPUT_MAX 100
-
+/**
+ * INPUT - Executes commands read from a file.
+ * @argc: The number of command-line arguments.
+ * @argv: An array of strings representing the arguments.
+ *
+ * Return: 0 on success,1 on error
+ */
 int INPUT(int argc, char *argv[])
 {
 FILE *file;
