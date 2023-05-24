@@ -4,13 +4,10 @@
 #include<unistd.h>
 
 #define CMD_MAX 150
-/*
- * max - The main function of the interpret program.
- * The function takes no input parameters
- * @CMD_MAX: command line charactors
- * @void:no input parameter
- * @cmd_status:Exit status of the program
- * Return:0 always return succes
+/**
+ * max - Executes user commands from stdin.
+ *
+ * Return:Always return 0.
  */
 int max(void)
 {
@@ -35,7 +32,12 @@ printf("command is not found\n");
 }
 return (0);
 }
+/**
+ *max2 - Calls the max function.
+ *
+ * Return: The return value of the max function.
+ */
 int max2(void)
 {
-return max();
+return (max());
 }
